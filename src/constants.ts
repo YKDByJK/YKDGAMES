@@ -18,7 +18,7 @@ export const TOKENS: TokenMeta[] = [
      mint: new PublicKey("BgFhv7WXJameaDeuwW5aSSGYyi6MpxE8yfyC2jYEssyy"),
     symbol: 'YKD',
     name: 'Yonder Kid Dreams',
-    image: "https://bafkreicezjydn2w7byv574zlftwptyi6fm6rklftpvnytmg2jwp3vkjhwq.ipfs.nftstorage.link",
+    image: "ipfs://QmQULX9E5xbuu72Vmph9fDnJvUA85KPW7xheFJvXS2ywpc/Ykd_token-removebg-preview.png",
      decimals: 6,
      baseWager: 1 * 1e6,
    }
