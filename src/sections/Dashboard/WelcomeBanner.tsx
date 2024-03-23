@@ -112,8 +112,8 @@ export function WelcomeBanner() {
         <button onClick={() => window.open('https://github.com/gamba-labs/gamba', '_blank')}>
           👨‍💻 Build your own
         </button>
-        <button onClick={() => window.open('https://discord.gg/HSTtFFwR', '_blank')}>
-          💬 Discord
+        <button onClick={() => window.open('https://t.me/+EY77Kavn1QkyZjMx', '_blank')}>
+          💬 Telegram
         </button>
       </Buttons>
     </Welcome>
