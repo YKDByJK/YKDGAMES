@@ -309,3 +309,6 @@ canvas {
   left: 0;
   z-index: -1;
 }
+#wrapper {
+  position: relative;
+}
