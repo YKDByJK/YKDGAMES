@@ -295,11 +295,11 @@ body {
 }
 
 html, body {
-  overflow: auto; /* or auto */
+  overflow: visible; /* or auto */
 }
 
 canvas {
-  overflow: hidden;
+  overflow: auto;
   width: 100vw;
   height: 100vh;
   background-color: rgb(19, 18, 18);
