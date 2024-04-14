@@ -22,4 +22,13 @@ export const TOKENS: TokenMeta[] = [
      decimals: 6,
      baseWager: 1 * 1e6,
    }
+   
+  {
+    mint: new PublicKey("JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN"),
+  symbol: 'JUP', 
+  name: 'Jupiter',
+  image: "https://static.jup.ag/jup/metadata.json", 
+   decimals: 6, 
+   basewager: 1 *1e6,
+  }
 ]
