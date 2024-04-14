@@ -310,14 +310,6 @@ canvas {
   left: 0;
   z-index: -1;
 }
-#canvas-container {
-  width: 100vw;
-  height: 50vh;
-  overflow: auto;
+#wrapper {
+  position: relative;
 }
-
-#test {
-  width: 100%;
-  height: 200%;
-}
-
