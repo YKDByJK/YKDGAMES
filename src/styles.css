@@ -60,11 +60,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
-body {
-  background-color:black;
-  z-index:1;
-  overflow-y:hidden;
-  overflow-x:hidden;}
 
 .quadrados {
     background:
