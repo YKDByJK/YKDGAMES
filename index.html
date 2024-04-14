@@ -17,9 +17,10 @@
   </head>
   
   <body>
-    <div id="scrollable">
-    <div id="wrapper">
-    <canvas id="test"></canvas></div>
+    
+    <div id="canvas-container">
+      <canvas id="test"></canvas>
+    </div>
 
     <div class="cont">
       <div class="drip"></div>
@@ -135,20 +136,6 @@
   }
   create();
   particles();</script>
-  <script>var body = document.body;
-    var startY, scrollTop;
-    
-    body.addEventListener('touchstart', function(e) {
-      startY = e.touches[0].pageY;
-      scrollTop = body.scrollTop;
-    });
-    
-    body.addEventListener('touchmove', function(e) {
-      var currentY = e.touches[0].pageY;
-      var scrollY = (currentY - startY) * 2;
-      body.scrollTop = scrollTop - scrollY;
-      e.preventDefault();
-    });</script>
   </div>
   </body>
 
