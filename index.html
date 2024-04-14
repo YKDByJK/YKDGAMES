@@ -11,15 +11,17 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="manifest" href="/manifest.webmanifest">
   </head>
+  <main>
+    <div class="relative flex flex-col h-[100vh] items-end justify-end bg-white dark:bg-black transition-bg">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="jumbo absolute -inset-[10px] opacity-50"></div>
+        </div>
+        <div class="mb-4">
+            <button onclick="toggleTheme()" class="px-3 py-1 border border-stone-200 rounded-full drop-shadow-sm text-sm text-stone-800 dark:text-white bg-white/40 dark:bg-black/40 backdrop-blur-lg hover:border-stone-300 transition-colors dark:border-stone-500 dark:hover:border-stone-400">Toggle Theme</button>
+        </div>
+    </div>
+</main>
   <body>
-    <ul class="clouds">
-      <li class="cloud x1"></li>
-      <li class="cloud x2"></li>
-      <li class="cloud x3"></li>
-      <li class="cloud x4"></li>
-      <li class="cloud x5"></li>
-    </ul>
-   
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script type="module">
@@ -27,6 +29,12 @@
       window.Buffer = buffer.Buffer
     </script>
     <script type="module" src="./src/index.tsx"></script>
+  <script>function toggleTheme() {
+    if (document.body.classList.contains("dark"))
+        document.body.classList.remove("dark");
+    else
+        document.body.classList.add("dark");
+}</script>
   </body>
 
 </html>
