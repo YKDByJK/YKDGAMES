@@ -60,72 +60,135 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-body {
-    font-family: Inter, sans-serif;
-}
+  $purple: rgb(232 121 249);
+  $blue: rgb(96 165 250);
+  $green: rgb(94 234 212);
 
-@keyframes jumbo {
+  $animationtime: 45s;
+  $length: 25;
+
+  body {
+    overflow: hidden;
+  }
+
+  .rainbow {
+    height: 100vh;
+    width: 0;
+    top: 0;
+    position: absolute;
+    transform: rotate(10deg);
+    transform-origin: top right;
+    @for $i from 1 through $length {
+      &:nth-child(#{$i}) {
+        $colors: 0;
+        $r: random(6);
+        @if $r == 1 {
+          $colors: $purple, $blue, $green;
+        }
+        @elseif $r == 2 {
+          $colors: $purple, $green, $blue;
+        }
+        @elseif $r == 3 {
+          $colors: $green, $purple, $blue;
+        }
+        @elseif $r == 4 {
+          $colors: $green, $blue, $purple;
+        }
+        @elseif $r == 5 {
+          $colors: $blue, $green, $purple;
+        }
+        @elseif $r == 6 {
+          $colors: $blue, $purple, $green;
+        }
+        box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px nth($colors, 1),
+          0 0 50px 25px nth($colors, 2), 50px 0 50px 25px nth($colors, 3),
+          130px 0 80px 40px white;
+
+        animation: #{$animationtime -
+          $animationtime /
+          $length /
+          2 *
+          $i}
+          linear
+          infinite
+          slide;
+        animation-delay: -#{$i / $length * $animationtime};
+      }
+    }
+    position: absolute;
+    z-index: -1;
+  }
+  @keyframes slide {
     from {
-        background-position: 50% 50%, 50% 50%;
+      right: -25vw;
     }
     to {
-        background-position: 350% 50%, 350% 50%;
+      right: 125vw;
     }
-}
+  }
 
-.jumbo {
-    --stripes: repeating-linear-gradient(
-        100deg,
-        #fff 0%,
-        #fff 7%,
-        transparent 10%,
-        transparent 12%,
-        #fff 16%
-    );
-    --stripesDark: repeating-linear-gradient(
-        100deg,
-        #000 0%,
-        #000 7%,
-        transparent 10%,
-        transparent 12%,
-        #000 16%
-    );
-    --rainbow: repeating-linear-gradient(
-        100deg,
-        #60a5fa 10%,
-        #e879f9 15%,
-        #60a5fa 20%,
-        #5eead4 25%,
-        #60a5fa 30%
-    );
-    background-image: var(--stripes), var(--rainbow);
-    background-size: 300%, 200%;
-    background-position: 50% 50%, 50% 50%;
-
-    filter: blur(10px) invert(100%);
-
-    mask-image: radial-gradient(ellipse at 100% 0%, black 40%, transparent 70%);
-
-    pointer-events: none;
-}
-
-.jumbo::after {
-    content: "";
+  .h {
+    box-shadow: 0 0 50vh 40vh white;
+    width: 100vw;
+    height: 0;
+    bottom: 0;
+    left: 0;
     position: absolute;
-    inset: 0;
-    background-image: var(--stripes), var(--rainbow);
-    background-size: 200%, 100%;
-    animation: jumbo 60s linear infinite;
-    background-attachment: fixed;
-    mix-blend-mode: difference;
-}
+  }
+  .v {
+    box-shadow: 0 0 35vw 25vw white;
+    width: 0;
+    height: 100vh;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+  }
 
-.dark .jumbo {
-    background-image: var(--stripesDark), var(--rainbow);
-    filter: blur(10px) opacity(50%) saturate(200%);
-}
-.dark .jumbo::after {
-    background-image: var(--stripesDark), var(--rainbow);
-}
+  // DESCRIPTION (delete me if needed)
+  .description-container {
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    text-align: left;
+    letter-spacing: 3px;
+    .title {
+      font-size: 19px;
+      font-weight: 500;
+      color: black;
+      text-transform: uppercase;
+    }
+    .subtitle {
+      margin-top: 6px;
+      font-size: 26px;
+      font-weight: 500;
+      color: black;
+      text-transform: uppercase;
+    }
+  }
+  .author-container {
+    $width: 42px;
+    position: absolute;
+    width: 50%;
+    right: $width/2;
+    bottom: $width/2;
+    text-align: right;
+    .picture {
+      position: absolute;
+      right: 0;
+      top: -$width;
+      margin-top: -12px;
+      width: $width;
+      height: $width;
+      background-size: $width;
+      background-position: center;
+      background-repeat-style: "no-repeat";
+      background-image: url(https://assets.codepen.io/595576/internal/avatars/users/default.png?format=auto&version=1689877807&width=80&height=80);
+    }
+    .title {
+      font-size: 16px;
+      letter-spacing: 2px;
+      color: black;
+    }
+  }
+
