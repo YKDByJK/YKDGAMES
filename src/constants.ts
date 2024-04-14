@@ -21,8 +21,8 @@ export const TOKENS: TokenMeta[] = [
     image: "ipfs://QmQULX9E5xbuu72Vmph9fDnJvUA85KPW7xheFJvXS2ywpc/Ykd_token-removebg-preview.png",
      decimals: 6,
      baseWager: 1 * 1e6,
-   }
-   
+   },
+  
   {
     mint: new PublicKey("JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN"),
   symbol: 'JUP', 
@@ -31,4 +31,5 @@ export const TOKENS: TokenMeta[] = [
    decimals: 6, 
    basewager: 1 *1e6,
   }
+
 ]
