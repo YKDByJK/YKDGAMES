@@ -83,8 +83,8 @@ body::-webkit-scrollbar-thumb {
     display: block;
     background-color: rgba(109, 91, 91, 0.616);
     bottom: -100px;
-    -webkit-animation: square 20s infinite;
-    animation: square 20s infinite;
+    -webkit-animation: square 5s infinite;
+    animation: square 5s infinite;
     -webkit-transition-timing-function: linear;
     transition-timing-function: linear;
 }
@@ -98,7 +98,7 @@ body::-webkit-scrollbar-thumb {
     width: 60px;
     height: 60px;
     left: 40%;
-    -webkit-animation-delay: 2s;
+    -webkit-animation-delay: 1s;
     animation-delay: 2s;
     -webkit-animation-duration: 17s;
     animation-duration: 17s;
@@ -108,7 +108,7 @@ body::-webkit-scrollbar-thumb {
     width: 10px;
     height: 10px;
     left: 60%;
-    -webkit-animation-delay: 4s;
+    -webkit-animation-delay: 2s;
     animation-delay: 4s;
     -webkit-animation-duration: 13s;
     animation-duration: 13s;
@@ -128,7 +128,7 @@ body::-webkit-scrollbar-thumb {
     width: 50px;
     height: 50px;
     left: 50%;
-    -webkit-animation-delay: 7s;
+    -webkit-animation-delay: 3s;
     animation-delay: 7s;
     -webkit-animation-duration: 12s;
     animation-duration: 12s;
