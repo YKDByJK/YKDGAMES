@@ -294,10 +294,8 @@ body {
   padding: 0;
 }
 
-html,
-body {
-  width: 100vw;
-  height: 100vh;
+html, body {
+  overflow: auto; /* or auto */
 }
 
 canvas {
@@ -311,5 +309,9 @@ canvas {
   z-index: -1;
 }
 #wrapper {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
