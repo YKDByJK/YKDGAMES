@@ -288,10 +288,24 @@ body {
   margin-left:60px;
 }
 
-* { margin:0; padding:0; }
+* {
+  margin: 0;
+  padding: 0;
+}
 
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
 
-canvas { 
-   overflow: hidden;
-   background-color:rgb(43, 40, 40);
+canvas {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
