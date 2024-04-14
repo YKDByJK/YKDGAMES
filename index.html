@@ -135,28 +135,19 @@
   }
   create();
   particles();</script>
-  <script>var scrollable = document.getElementById('scrollable');
-    var startX, startY, scrollLeft, scrollTop;
+  <script>var body = document.body;
+    var startY, scrollTop;
     
-    scrollable.addEventListener('touchstart', function(e) {
-      startX = e.touches[0].pageX;
+    body.addEventListener('touchstart', function(e) {
       startY = e.touches[0].pageY;
-      scrollLeft = scrollable.scrollLeft;
-      scrollTop = scrollable.scrollTop;
+      scrollTop = body.scrollTop;
     });
     
-    scrollable.addEventListener('touchmove', function(e) {
-      var currentX = e.touches[0].pageX;
+    body.addEventListener('touchmove', function(e) {
       var currentY = e.touches[0].pageY;
-      var scrollX = (currentX - startX) * 2;
       var scrollY = (currentY - startY) * 2;
-      scrollable.scrollLeft = scrollLeft - scrollX;
-      scrollable.scrollTop = scrollTop - scrollY;
+      body.scrollTop = scrollTop - scrollY;
       e.preventDefault();
-    });
-    
-    scrollable.addEventListener('touchend', function() {
-      // do something on touch end if needed
     });</script>
   </div>
   </body>
