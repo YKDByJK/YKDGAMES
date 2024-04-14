@@ -63,7 +63,15 @@ body::-webkit-scrollbar-thumb {
 
 *Lets start with the cloud formation rather*/
 
+/*Lets start with the cloud formation rather*/
 
+/*The container will also serve as the SKY*/
+
+
+body {
+	/*To hide the horizontal scroller appearing during the animation*/
+	overflow: hidden;
+}
 
 #clouds{
   padding: 100px 0;
