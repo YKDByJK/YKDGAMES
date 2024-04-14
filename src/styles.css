@@ -112,7 +112,7 @@ body {
   height:29px;
   width:29px;
   animation-delay: -0.2s;
-  background:blue;
+  background:#04b3fb;
   left:173px;
   margin-left:60px;
 }
@@ -121,7 +121,7 @@ body {
   height:25px;
   width:25px;
   animation-delay: -0.4s;
-  background:black;
+  background:#fac17b;
   left:76px;
   margin-left:60px;
 }
@@ -130,7 +130,7 @@ body {
   height:38px;
   width:38px;
   animation-delay: -0.6s;
-  background:black;
+  background:#fb7b8c;
   left:96px;
   margin-left:60px;
 }
@@ -139,7 +139,7 @@ body {
   height:29px;
   width:29px;
   animation-delay: -0.8s;
-  background:black;
+  background:#843c47;
   left:24px;
   margin-left:60px;
 }
@@ -148,7 +148,7 @@ body {
   height:20px;
   width:20px;
   animation-delay: -1s;
-  background:black;
+  background:#fac17b;
   left:93px;
   margin-left:60px;
 }
@@ -157,7 +157,7 @@ body {
   height:14px;
   widows: 14px;
   animation-delay: -1.2;
-  background:black;
+  background:#fb7b8c;
   left:117px;
   margin-left:60px;
 }
@@ -166,7 +166,8 @@ body {
   height:5px;
   width:5px;
   animation-delay: -1.4s;
-  background:black;
+  background:#04b3fb
+  ;
   left:31px;
   margin-left:60px;
 }
@@ -229,7 +230,7 @@ body {
   height:4px;
   width:4px;
   animation-delay: -2.8s;
-  background:black;
+  background:#6a3339;
   left:168px;
   margin-left:60px;
 }
@@ -247,7 +248,7 @@ body {
   height:40px;
   width:40px;
   animation-delay: -3.2s;
-  background:black;
+  background:#843c47;
   left:158px;
   margin-left:60px;
 }
@@ -256,7 +257,7 @@ body {
   height:27px;
   width:27px;
   animation-delay: -3.4s;
-  background:black;
+  background:#04b3fb;
   left:179px;
   margin-left:60px;
 }
@@ -274,7 +275,7 @@ body {
   height:23px;
   width:23px;
   animation-delay: -3.8s;
-  background:rgb(221, 152, 3);
+  background: #fac17b;
   left:149px;
   margin-left:60px;
 }
@@ -283,7 +284,7 @@ body {
   height:20px;
   width:20px;
   animation-delay: -4s;
-  background:red;
+  background:#fb7b8c;
   left:156px;
   margin-left:60px;
 }
