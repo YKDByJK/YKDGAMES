@@ -5,7 +5,7 @@ import { PublicKey } from '@solana/web3.js'
 export const RPC_ENDPOINT = import.meta.env.VITE_RPC_ENDPOINT ?? "https://mainnet.helius-rpc.com/?api-key=7b99c32d-a41e-4409-bb2d-c1b278627ef4"
 
 // Change this value to your Solana address
-export const PLATFORM_CREATOR_ADDRESS = new PublicKey('HvX1mNoVH7EaqB6KDdgzsHageuNBvbgrpPvnNcEpcTva')
+export const PLATFORM_CREATOR_ADDRESS = new PublicKey('GUPCESUiXye7kh6kV9voGCk1C4LYukyuTwxLg7foYNRv')
 
 // Appears in ShareModal
 export const PLATFORM_SHARABLE_URL = 'v2-play.YKD.so'
