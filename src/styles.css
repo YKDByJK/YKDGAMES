@@ -68,10 +68,10 @@ body {
 
 .quadrados {
     background:
-    linear-gradient(45deg, hsla(352, 96%, 45%, 1) 0%, hsla(352, 96%, 45%, 0) 70%),
-    linear-gradient(135deg, hsla(253, 95%, 42%, 1) 10%, hsla(253, 95%, 42%, 0) 80%),
-    linear-gradient(225deg, hsla(179, 91%, 45%, 1) 10%, hsla(179, 91%, 45%, 0) 80%),
-    linear-gradient(315deg, hsla(119, 96%, 49%, 1) 100%, hsla(119, 96%, 49%, 0) 70%);    
+    linear-gradient(45deg, rgb(253, 186, 1) 0%, hsla(352, 96%, 45%, 0) 70%),
+    linear-gradient(135deg, rgb(241, 4, 4) 10%, hsla(253, 95%, 42%, 0) 80%),
+    linear-gradient(225deg, rgb(25, 0, 255) 10%, hsla(179, 91%, 45%, 0) 80%),
+    linear-gradient(315deg, rgb(111, 2, 145) 100%, hsla(119, 96%, 49%, 0) 70%);    
     position: absolute;
     top: 0;
     left: 0;
@@ -86,7 +86,7 @@ body {
     position: absolute;
     list-style: none;
     display: block;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(109, 91, 91, 0.616);
     bottom: -100px;
     -webkit-animation: square 20s infinite;
     animation: square 20s infinite;
